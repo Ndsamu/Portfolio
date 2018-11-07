@@ -1,0 +1,5 @@
+<map id="MotionHandler" name="MotionHandler">
+<area shape="rect" id="node2" href="$classArenaMobileEntity.html" title="A mobile entity in the Arena, capable of updating its own position and/or velocity when asked by the ..." alt="" coords="45,95,173,121"/>
+<area shape="rect" id="node3" href="$classArenaEntity.html" title="A base class from which all Arena entities inherit. " alt="" coords="5,5,96,32"/>
+<area shape="rect" id="node4" href="$classSensorTouch.html" title="Class representing a touch sensor. " alt="" coords="120,5,219,32"/>
+</map>

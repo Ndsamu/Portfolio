@@ -1,0 +1,3 @@
+<map id="MotionHandlerObstacle" name="MotionHandlerObstacle">
+<area shape="rect" id="node2" href="$classMotionHandler.html" title="Base class for managing the pose and wheel velocity of the entity. " alt="" coords="31,5,138,32"/>
+</map>
