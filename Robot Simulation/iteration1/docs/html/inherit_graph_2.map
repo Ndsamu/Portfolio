@@ -1,8 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classArenaEntity.html" title="A base class from which all Arena entities inherit. " alt="" coords="5,31,96,57"/>
-<area shape="rect" id="node2" href="$classArenaImmobileEntity.html" title="An immobile entity in the Arena. " alt="" coords="144,5,287,32"/>
-<area shape="rect" id="node4" href="$classArenaMobileEntity.html" title="A mobile entity in the Arena, capable of updating its own position and/or velocity when asked by the ..." alt="" coords="151,56,279,83"/>
-<area shape="rect" id="node3" href="$classBase.html" title="Class representing a immobile base within the Arena. " alt="" coords="346,5,398,32"/>
-<area shape="rect" id="node5" href="$classObstacle.html" title="Class representing a robot within the arena. " alt="" coords="335,56,409,83"/>
-<area shape="rect" id="node6" href="$classRobot.html" title="Class representing a robot within the arena. " alt="" coords="343,107,401,133"/>
-</map>

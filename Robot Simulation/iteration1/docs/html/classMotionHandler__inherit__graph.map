@@ -1,4 +1,0 @@
-<map id="MotionHandler" name="MotionHandler">
-<area shape="rect" id="node2" href="$classMotionHandlerObstacle.html" title="Class managing a Obstacle&#39;s speed and heading angle based on collisions and user inputs. " alt="" coords="5,80,164,107"/>
-<area shape="rect" id="node3" href="$classMotionHandlerRobot.html" title="Class managing a Robot&#39;s speed and heading angle based on collisions and user inputs. " alt="" coords="189,80,330,107"/>
-</map>

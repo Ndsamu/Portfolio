@@ -1,0 +1,94 @@
+\hypertarget{classMotionHandlerRobot}{}\section{Motion\+Handler\+Robot Class Reference}
+\label{classMotionHandlerRobot}\index{Motion\+Handler\+Robot@{Motion\+Handler\+Robot}}
+
+
+Class managing a \hyperlink{classRobot}{Robot}\textquotesingle{}s speed and heading angle based on collisions and user inputs.  
+
+
+
+
+{\ttfamily \#include $<$motion\+\_\+handler\+\_\+robot.\+h$>$}
+
+
+
+Inheritance diagram for Motion\+Handler\+Robot\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{classMotionHandlerRobot__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Motion\+Handler\+Robot\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{classMotionHandlerRobot__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Motion\+Handler\+Robot} (\hyperlink{classArenaMobileEntity}{Arena\+Mobile\+Entity} $\ast$ent)\hypertarget{classMotionHandlerRobot_a4b52a0b181837a8d63c39f71811d691b}{}\label{classMotionHandlerRobot_a4b52a0b181837a8d63c39f71811d691b}
+
+\item 
+{\bfseries Motion\+Handler\+Robot} (const \hyperlink{classMotionHandlerRobot}{Motion\+Handler\+Robot} \&other)=default\hypertarget{classMotionHandlerRobot_a66445cc9057e3ef9298b5bd239df6d4e}{}\label{classMotionHandlerRobot_a66445cc9057e3ef9298b5bd239df6d4e}
+
+\item 
+\hyperlink{classMotionHandlerRobot}{Motion\+Handler\+Robot} \& {\bfseries operator=} (const \hyperlink{classMotionHandlerRobot}{Motion\+Handler\+Robot} \&other)=default\hypertarget{classMotionHandlerRobot_a48181f197ffb864f16e29721ad964e4a}{}\label{classMotionHandlerRobot_a48181f197ffb864f16e29721ad964e4a}
+
+\item 
+void \hyperlink{classMotionHandlerRobot_acd2cdb615d806dcf809142e84569ca9d}{Update\+Velocity} () override
+\begin{DoxyCompactList}\small\item\em Update the speed and the pose angle according to the sensor readings. \end{DoxyCompactList}\item 
+void \hyperlink{classMotionHandlerRobot_a93ea16501b7b8c0bd78edb2681aa3b6d}{Increase\+Speed} () override\hypertarget{classMotionHandlerRobot_a93ea16501b7b8c0bd78edb2681aa3b6d}{}\label{classMotionHandlerRobot_a93ea16501b7b8c0bd78edb2681aa3b6d}
+
+\begin{DoxyCompactList}\small\item\em Increase the overall speed of the entity by speed\+\_\+delta. \end{DoxyCompactList}\item 
+void \hyperlink{classMotionHandlerRobot_a89e9b8b4e22fb021d7d67c817e66b7b2}{Decrease\+Speed} () override\hypertarget{classMotionHandlerRobot_a89e9b8b4e22fb021d7d67c817e66b7b2}{}\label{classMotionHandlerRobot_a89e9b8b4e22fb021d7d67c817e66b7b2}
+
+\begin{DoxyCompactList}\small\item\em Decrease the overall speed of the entity by speed\+\_\+delta. \end{DoxyCompactList}\item 
+void \hyperlink{classMotionHandlerRobot_a4b18204b7c7f7f8a3cbb7f0e8ccf088f}{Turn\+Right} () override\hypertarget{classMotionHandlerRobot_a4b18204b7c7f7f8a3cbb7f0e8ccf088f}{}\label{classMotionHandlerRobot_a4b18204b7c7f7f8a3cbb7f0e8ccf088f}
+
+\begin{DoxyCompactList}\small\item\em Turn the entity to the right by angle\+\_\+delta (in degrees?) \end{DoxyCompactList}\item 
+void \hyperlink{classMotionHandlerRobot_a955ca2693c4188ffb08cfde469e58252}{Turn\+Left} () override\hypertarget{classMotionHandlerRobot_a955ca2693c4188ffb08cfde469e58252}{}\label{classMotionHandlerRobot_a955ca2693c4188ffb08cfde469e58252}
+
+\begin{DoxyCompactList}\small\item\em Turn the entity to the left by angle\+\_\+delta (in degrees?) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class managing a \hyperlink{classRobot}{Robot}\textquotesingle{}s speed and heading angle based on collisions and user inputs. 
+
+Currently, both wheels are always going at maximum speed, and cannot be controlled independently. 
+
+\subsection{Member Function Documentation}
+\index{Motion\+Handler\+Robot@{Motion\+Handler\+Robot}!Update\+Velocity@{Update\+Velocity}}
+\index{Update\+Velocity@{Update\+Velocity}!Motion\+Handler\+Robot@{Motion\+Handler\+Robot}}
+\subsubsection[{\texorpdfstring{Update\+Velocity() override}{UpdateVelocity() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Motion\+Handler\+Robot\+::\+Update\+Velocity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classMotionHandlerRobot_acd2cdb615d806dcf809142e84569ca9d}{}\label{classMotionHandlerRobot_acd2cdb615d806dcf809142e84569ca9d}
+
+
+Update the speed and the pose angle according to the sensor readings. 
+
+Currently does not change speed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pose} & The current pose. \\
+\hline
+\mbox{\tt in}  & {\em st} & A \hyperlink{classSensorTouch}{Sensor\+Touch} to be read. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classMotionHandler_ad9bfac3d0ec3cec1d607f41475886c3c}{Motion\+Handler}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/samue289/\+C\+S\+C\+I3081\+W/3081\+\_\+\+S18/project-\/samue289/iteration1/src/\hyperlink{motion__handler__robot_8h}{motion\+\_\+handler\+\_\+robot.\+h}\item 
+/home/samue289/\+C\+S\+C\+I3081\+W/3081\+\_\+\+S18/project-\/samue289/iteration1/src/\hyperlink{motion__handler__robot_8cc}{motion\+\_\+handler\+\_\+robot.\+cc}\end{DoxyCompactItemize}

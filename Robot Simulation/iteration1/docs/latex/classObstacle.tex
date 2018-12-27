@@ -1,0 +1,93 @@
+\hypertarget{classObstacle}{}\section{Obstacle Class Reference}
+\label{classObstacle}\index{Obstacle@{Obstacle}}
+
+
+Class representing a robot within the arena.  
+
+
+
+
+{\ttfamily \#include $<$obstacle.\+h$>$}
+
+
+
+Inheritance diagram for Obstacle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{classObstacle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Obstacle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{classObstacle__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classObstacle_a8f734072321fa06a7b7dae2d5f50f352}{Obstacle} ()\hypertarget{classObstacle_a8f734072321fa06a7b7dae2d5f50f352}{}\label{classObstacle_a8f734072321fa06a7b7dae2d5f50f352}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classObstacle_a5fb8be1be47445fc8286477312b5df62}{Reset} () override\hypertarget{classObstacle_a5fb8be1be47445fc8286477312b5df62}{}\label{classObstacle_a5fb8be1be47445fc8286477312b5df62}
+
+\begin{DoxyCompactList}\small\item\em Reset the \hyperlink{classRobot}{Robot} to a newly constructed state (needed for reset button to work in G\+UI). \end{DoxyCompactList}\item 
+void \hyperlink{classObstacle_adda549c77a5a67aa5423cb0f84b986df}{Timestep\+Update} (unsigned int dt) override
+\begin{DoxyCompactList}\small\item\em Update the \hyperlink{classRobot}{Robot}\textquotesingle{}s position and velocity after the specified duration has passed. \end{DoxyCompactList}\item 
+void \hyperlink{classObstacle_ad9daaf35d2ff7514ed205793a01892e3}{Handle\+Collision} ()\hypertarget{classObstacle_ad9daaf35d2ff7514ed205793a01892e3}{}\label{classObstacle_ad9daaf35d2ff7514ed205793a01892e3}
+
+\begin{DoxyCompactList}\small\item\em Handles the collision by setting the sensor to activated. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classObstacle_a4642d3f61b6e74fd5a9c91bb263dfe18}{get\+\_\+name} () const override\hypertarget{classObstacle_a4642d3f61b6e74fd5a9c91bb263dfe18}{}\label{classObstacle_a4642d3f61b6e74fd5a9c91bb263dfe18}
+
+\begin{DoxyCompactList}\small\item\em Get the name of the \hyperlink{classObstacle}{Obstacle} for visualization purposes, and to aid in debugging. \end{DoxyCompactList}\item 
+\hyperlink{classMotionHandlerObstacle}{Motion\+Handler\+Obstacle} {\bfseries get\+\_\+motion\+\_\+handler} ()\hypertarget{classObstacle_a3733568b7023389407d9d8cea358b329}{}\label{classObstacle_a3733568b7023389407d9d8cea358b329}
+
+\item 
+\hyperlink{classMotionBehaviorDifferential}{Motion\+Behavior\+Differential} {\bfseries get\+\_\+motion\+\_\+behavior} ()\hypertarget{classObstacle_aab71c0b9c09fa1c1429b3896a7adfb7c}{}\label{classObstacle_aab71c0b9c09fa1c1429b3896a7adfb7c}
+
+\item 
+void {\bfseries set\+\_\+state} (int state)\hypertarget{classObstacle_a4207ff28b8118bfa76cbca93b1f2eaeb}{}\label{classObstacle_a4207ff28b8118bfa76cbca93b1f2eaeb}
+
+\item 
+int {\bfseries get\+\_\+state} ()\hypertarget{classObstacle_ae3f5da08a3b62a6fc8a39d90200d511a}{}\label{classObstacle_ae3f5da08a3b62a6fc8a39d90200d511a}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class representing a robot within the arena. 
+
+Robots are composed of a motion handler, motion behavior, and touch sensor. These classes interact to maintain the pose (position and heading) of the robot. At each time step, the wheel velocities are used to calculate the next pose of the robot. The handler manages the pose and user requests. The behavior calculates the new pose based on wheel velocities.
+
+Robots can be controlled through keypress, which modify wheel velocities.
+
+The touch sensor is activated when the robot collides with an object. The heading is modified after a collision to move the robot away from the other object. 
+
+\subsection{Member Function Documentation}
+\index{Obstacle@{Obstacle}!Timestep\+Update@{Timestep\+Update}}
+\index{Timestep\+Update@{Timestep\+Update}!Obstacle@{Obstacle}}
+\subsubsection[{\texorpdfstring{Timestep\+Update(unsigned int dt) override}{TimestepUpdate(unsigned int dt) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Obstacle\+::\+Timestep\+Update (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{dt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classObstacle_adda549c77a5a67aa5423cb0f84b986df}{}\label{classObstacle_adda549c77a5a67aa5423cb0f84b986df}
+
+
+Update the \hyperlink{classRobot}{Robot}\textquotesingle{}s position and velocity after the specified duration has passed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & The \# of timesteps that have elapsed since the last update. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/samue289/\+C\+S\+C\+I3081\+W/3081\+\_\+\+S18/project-\/samue289/iteration1/src/\hyperlink{obstacle_8h}{obstacle.\+h}\item 
+/home/samue289/\+C\+S\+C\+I3081\+W/3081\+\_\+\+S18/project-\/samue289/iteration1/src/\hyperlink{obstacle_8cc}{obstacle.\+cc}\end{DoxyCompactItemize}

@@ -1,0 +1,112 @@
+\hypertarget{classSensor}{}\section{Sensor Class Reference}
+\label{classSensor}\index{Sensor@{Sensor}}
+
+
+The sensor class which all other sensors inherit from.  
+
+
+
+
+{\ttfamily \#include $<$sensor.\+h$>$}
+
+
+
+Inheritance diagram for Sensor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classSensor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Sensor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=134pt]{classSensor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSensor_a342d6d11ef572c8cba92cb76fb1a294b}{Sensor} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classSensor}{Sensor}\textquotesingle{}s constructor. \end{DoxyCompactList}\item 
+{\bfseries Sensor} (\hyperlink{structPose}{Pose} pose)\hypertarget{classSensor_a0f629f161f0916c70025a8bfe829f57a}{}\label{classSensor_a0f629f161f0916c70025a8bfe829f57a}
+
+\item 
+virtual \hyperlink{classSensor_a387919f060b66074dbd107ed1764f8f6}{$\sim$\+Sensor} ()=default\hypertarget{classSensor_a387919f060b66074dbd107ed1764f8f6}{}\label{classSensor_a387919f060b66074dbd107ed1764f8f6}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classSensor}{Sensor}\textquotesingle{}s destructor. {\ttfamily delete} all members. \end{DoxyCompactList}\item 
+void \hyperlink{classSensor_ae7142e59234c594e21de26467733a279}{Reset} ()\hypertarget{classSensor_ae7142e59234c594e21de26467733a279}{}\label{classSensor_ae7142e59234c594e21de26467733a279}
+
+\begin{DoxyCompactList}\small\item\em Resets the pose and sensor reading. \end{DoxyCompactList}\item 
+\hyperlink{structPose}{Pose} {\bfseries get\+\_\+pose} () const \hypertarget{classSensor_ad546b1b5d28a15b004d9143d95aea28e}{}\label{classSensor_ad546b1b5d28a15b004d9143d95aea28e}
+
+\item 
+void {\bfseries set\+\_\+pose} (\hyperlink{structPose}{Pose} pose)\hypertarget{classSensor_a2d82072c0e2cb2e4663993eea261ea5f}{}\label{classSensor_a2d82072c0e2cb2e4663993eea261ea5f}
+
+\item 
+void {\bfseries set\+\_\+pose} (double x, double y)\hypertarget{classSensor_ab5b28f61907c916f77a9959b169b5361}{}\label{classSensor_ab5b28f61907c916f77a9959b169b5361}
+
+\item 
+void \hyperlink{classSensor_a2d3fbd7ba1b1dbbe4b3916aa8ce538ea}{Zero\+Reading} ()\hypertarget{classSensor_a2d3fbd7ba1b1dbbe4b3916aa8ce538ea}{}\label{classSensor_a2d3fbd7ba1b1dbbe4b3916aa8ce538ea}
+
+\begin{DoxyCompactList}\small\item\em Sets the sensor\textquotesingle{}s reading back to 0 for fresh input. \end{DoxyCompactList}\item 
+double {\bfseries Get\+Reading} ()\hypertarget{classSensor_a70a1a78b3875502d3a2e7a7ba2416903}{}\label{classSensor_a70a1a78b3875502d3a2e7a7ba2416903}
+
+\item 
+void \hyperlink{classSensor_a11136e330f87ec24deb0b8dc0abb7824}{Calculate\+Reading} (\hyperlink{structPose}{Pose} location\+\_\+)
+\begin{DoxyCompactList}\small\item\em Checks for the presence of a light. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structPose}{Pose} {\bfseries pose\+\_\+}\hypertarget{classSensor_ad060f21909f3e4f5dfd310cb2fa52000}{}\label{classSensor_ad060f21909f3e4f5dfd310cb2fa52000}
+
+\item 
+double {\bfseries reading\+\_\+} \{0\}\hypertarget{classSensor_ad71b1c465eae9ddf1da31cff1cbe3736}{}\label{classSensor_ad71b1c465eae9ddf1da31cff1cbe3736}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The sensor class which all other sensors inherit from. 
+
+Currently, all of the sensor functionality for lights and food is handled in this header. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Sensor@{Sensor}!Sensor@{Sensor}}
+\index{Sensor@{Sensor}!Sensor@{Sensor}}
+\subsubsection[{\texorpdfstring{Sensor()}{Sensor()}}]{\setlength{\rightskip}{0pt plus 5cm}Sensor\+::\+Sensor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSensor_a342d6d11ef572c8cba92cb76fb1a294b}{}\label{classSensor_a342d6d11ef572c8cba92cb76fb1a294b}
+
+
+\hyperlink{classSensor}{Sensor}\textquotesingle{}s constructor. 
+
+Initialize pose to the default pose. 
+
+\subsection{Member Function Documentation}
+\index{Sensor@{Sensor}!Calculate\+Reading@{Calculate\+Reading}}
+\index{Calculate\+Reading@{Calculate\+Reading}!Sensor@{Sensor}}
+\subsubsection[{\texorpdfstring{Calculate\+Reading(\+Pose location\+\_\+)}{CalculateReading(Pose location_)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sensor\+::\+Calculate\+Reading (
+\begin{DoxyParamCaption}
+\item[{{\bf Pose}}]{location\+\_\+}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSensor_a11136e330f87ec24deb0b8dc0abb7824}{}\label{classSensor_a11136e330f87ec24deb0b8dc0abb7824}
+
+
+Checks for the presence of a light. 
+
+$\ast$
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em location\+\_\+} & The pose of a light or food object.\\
+\hline
+\end{DoxyParams}
+Calculates distance from the pose passed in before calculating a reading relative to the distance. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{sensor_8h}{sensor.\+h}\end{DoxyCompactItemize}

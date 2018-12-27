@@ -1,0 +1,111 @@
+\hypertarget{classBase}{}\section{Base Class Reference}
+\label{classBase}\index{Base@{Base}}
+
+
+Class representing a immobile base within the \hyperlink{classArena}{Arena}.  
+
+
+
+
+{\ttfamily \#include $<$base.\+h$>$}
+
+
+
+Inheritance diagram for Base\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Base\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classBase__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBase_a5ffe0568374d8b9b4c4ec32953fd6453}{Base} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classBase_aed35831f6e46b267305326389ec9d6da}{Reset} () override\hypertarget{classBase_aed35831f6e46b267305326389ec9d6da}{}\label{classBase_aed35831f6e46b267305326389ec9d6da}
+
+\begin{DoxyCompactList}\small\item\em Reset the \hyperlink{classBase}{Base} using the initialization parameters received by the constructor. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classBase_a02ef545d5165eed175f81c29f9881f07}{get\+\_\+name} () const override
+\begin{DoxyCompactList}\small\item\em Get the name of the \hyperlink{classBase}{Base} for visualization purposes, and to aid in debugging. \end{DoxyCompactList}\item 
+bool \hyperlink{classBase_a6a805a97e0a836cf354fd1e2e294d112}{Is\+Captured} () const 
+\begin{DoxyCompactList}\small\item\em Getter for captured\+\_\+, which is the state of the base. \end{DoxyCompactList}\item 
+void \hyperlink{classBase_a933e149b6a25c59ca631e2bb80a3c1df}{set\+\_\+captured} (bool state)\hypertarget{classBase_a933e149b6a25c59ca631e2bb80a3c1df}{}\label{classBase_a933e149b6a25c59ca631e2bb80a3c1df}
+
+\begin{DoxyCompactList}\small\item\em Setter for captured\+\_\+, which is the state of the base. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class representing a immobile base within the \hyperlink{classArena}{Arena}. 
+
+\hyperlink{classBase}{Base} can enhance a \hyperlink{classRobot}{Robot}. If a \hyperlink{classRobot}{Robot} touches the \hyperlink{classBase}{Base}, it becomes a super robot.
+
+\hyperlink{classBase}{Base} have the capability of updating their own position when asked, and also track their own velocity and heading. They have a touch sensor for responding to collision events which is activated/deactivated on collision events. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Base@{Base}!Base@{Base}}
+\index{Base@{Base}!Base@{Base}}
+\subsubsection[{\texorpdfstring{Base()}{Base()}}]{\setlength{\rightskip}{0pt plus 5cm}Base\+::\+Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classBase_a5ffe0568374d8b9b4c4ec32953fd6453}{}\label{classBase_a5ffe0568374d8b9b4c4ec32953fd6453}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & A base\+\_\+params passed down from \hyperlink{main_8cc}{main.\+cc} for the initialization of the \hyperlink{classBase}{Base}. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Base@{Base}!get\+\_\+name@{get\+\_\+name}}
+\index{get\+\_\+name@{get\+\_\+name}!Base@{Base}}
+\subsubsection[{\texorpdfstring{get\+\_\+name() const override}{get_name() const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Base\+::get\+\_\+name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classBase_a02ef545d5165eed175f81c29f9881f07}{}\label{classBase_a02ef545d5165eed175f81c29f9881f07}
+
+
+Get the name of the \hyperlink{classBase}{Base} for visualization purposes, and to aid in debugging. 
+
+\begin{DoxyReturn}{Returns}
+Name of the \hyperlink{classBase}{Base}. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classArenaEntity_ad43152003033cf01ad86eeff1990b69a}{Arena\+Entity}.
+
+\index{Base@{Base}!Is\+Captured@{Is\+Captured}}
+\index{Is\+Captured@{Is\+Captured}!Base@{Base}}
+\subsubsection[{\texorpdfstring{Is\+Captured() const }{IsCaptured() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Base\+::\+Is\+Captured (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classBase_a6a805a97e0a836cf354fd1e2e294d112}{}\label{classBase_a6a805a97e0a836cf354fd1e2e294d112}
+
+
+Getter for captured\+\_\+, which is the state of the base. 
+
+\begin{DoxyReturn}{Returns}
+true if captured. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/samue289/\+C\+S\+C\+I3081\+W/3081\+\_\+\+S18/project-\/samue289/iteration1/src/\hyperlink{base_8h}{base.\+h}\item 
+/home/samue289/\+C\+S\+C\+I3081\+W/3081\+\_\+\+S18/project-\/samue289/iteration1/src/\hyperlink{base_8cc}{base.\+cc}\end{DoxyCompactItemize}

@@ -1,0 +1,73 @@
+\hypertarget{classMotionHandlerLight}{}\section{Motion\+Handler\+Light Class Reference}
+\label{classMotionHandlerLight}\index{Motion\+Handler\+Light@{Motion\+Handler\+Light}}
+
+
+Class managing a \hyperlink{classLight}{Light}\textquotesingle{}s speed and heading angle based on collisions and user inputs.  
+
+
+
+
+{\ttfamily \#include $<$motion\+\_\+handler\+\_\+light.\+h$>$}
+
+
+
+Inheritance diagram for Motion\+Handler\+Light\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classMotionHandlerLight__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Motion\+Handler\+Light\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{classMotionHandlerLight__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Motion\+Handler\+Light} (\hyperlink{classArenaMobileEntity}{Arena\+Mobile\+Entity} $\ast$ent)\hypertarget{classMotionHandlerLight_a88d566ea410916c6c7e83cd686c9877b}{}\label{classMotionHandlerLight_a88d566ea410916c6c7e83cd686c9877b}
+
+\item 
+{\bfseries Motion\+Handler\+Light} (const \hyperlink{classMotionHandlerLight}{Motion\+Handler\+Light} \&other)=default\hypertarget{classMotionHandlerLight_a8e9b5085179878317856219d18a0d946}{}\label{classMotionHandlerLight_a8e9b5085179878317856219d18a0d946}
+
+\item 
+\hyperlink{classMotionHandlerLight}{Motion\+Handler\+Light} \& {\bfseries operator=} (const \hyperlink{classMotionHandlerLight}{Motion\+Handler\+Light} \&other)=default\hypertarget{classMotionHandlerLight_a746099c8d42f431852efed388b2425d0}{}\label{classMotionHandlerLight_a746099c8d42f431852efed388b2425d0}
+
+\item 
+void \hyperlink{classMotionHandlerLight_a1ea397bb0ae87d9002330125d05384d7}{Update\+Velocity} () override
+\begin{DoxyCompactList}\small\item\em Update the speed and the pose angle according to the sensor readings. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class managing a \hyperlink{classLight}{Light}\textquotesingle{}s speed and heading angle based on collisions and user inputs. 
+
+Currently, both wheels are always going at maximum speed, and cannot be controlled independently. 
+
+\subsection{Member Function Documentation}
+\index{Motion\+Handler\+Light@{Motion\+Handler\+Light}!Update\+Velocity@{Update\+Velocity}}
+\index{Update\+Velocity@{Update\+Velocity}!Motion\+Handler\+Light@{Motion\+Handler\+Light}}
+\subsubsection[{\texorpdfstring{Update\+Velocity() override}{UpdateVelocity() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Motion\+Handler\+Light\+::\+Update\+Velocity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classMotionHandlerLight_a1ea397bb0ae87d9002330125d05384d7}{}\label{classMotionHandlerLight_a1ea397bb0ae87d9002330125d05384d7}
+
+
+Update the speed and the pose angle according to the sensor readings. 
+
+Simply travels in a straight line. 
+
+Reimplemented from \hyperlink{classMotionHandler_ad9bfac3d0ec3cec1d607f41475886c3c}{Motion\+Handler}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{motion__handler__light_8h}{motion\+\_\+handler\+\_\+light.\+h}\item 
+src/\hyperlink{motion__handler__light_8cc}{motion\+\_\+handler\+\_\+light.\+cc}\end{DoxyCompactItemize}

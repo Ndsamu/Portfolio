@@ -1,0 +1,163 @@
+\hypertarget{classRobot}{}\section{Robot Class Reference}
+\label{classRobot}\index{Robot@{Robot}}
+
+
+Class representing a robot within the arena.  
+
+
+
+
+{\ttfamily \#include $<$robot.\+h$>$}
+
+
+
+Inheritance diagram for Robot\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{classRobot__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Robot\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{classRobot__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRobot_a4fc7c70ae20623f05e06f2ecb388b6c4}{Robot} ()\hypertarget{classRobot_a4fc7c70ae20623f05e06f2ecb388b6c4}{}\label{classRobot_a4fc7c70ae20623f05e06f2ecb388b6c4}
+
+\begin{DoxyCompactList}\small\item\em Constructor using initialization values from \hyperlink{params_8h}{params.\+h}. \end{DoxyCompactList}\item 
+virtual \hyperlink{classRobot_abdaab04fa441f06d70a0bcfc731d2e8b}{$\sim$\+Robot} ()\hypertarget{classRobot_abdaab04fa441f06d70a0bcfc731d2e8b}{}\label{classRobot_abdaab04fa441f06d70a0bcfc731d2e8b}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classRobot}{Robot}\textquotesingle{}s destructor. {\ttfamily delete} all members. \end{DoxyCompactList}\item 
+void \hyperlink{classRobot_af597fd14927d2cd5308ded62f4e54e29}{Reset} () override\hypertarget{classRobot_af597fd14927d2cd5308ded62f4e54e29}{}\label{classRobot_af597fd14927d2cd5308ded62f4e54e29}
+
+\begin{DoxyCompactList}\small\item\em Reset the \hyperlink{classRobot}{Robot} to a newly constructed state (needed for reset button to work in G\+UI). \end{DoxyCompactList}\item 
+void \hyperlink{classRobot_ae790462f8782efcfd26082eedec30ed5}{Timestep\+Update} (unsigned int dt) override
+\begin{DoxyCompactList}\small\item\em Update the \hyperlink{classRobot}{Robot}\textquotesingle{}s position and velocity after the specified duration has passed. \end{DoxyCompactList}\item 
+\hyperlink{structPose}{Pose} \hyperlink{classRobot_a08072df75742df411a6918545724dfaf}{Sensor\+Location} (double angle\+\_\+)
+\begin{DoxyCompactList}\small\item\em Calculates the proper position of a sensor relative to a robot. \end{DoxyCompactList}\item 
+void \hyperlink{classRobot_a7fddfc5af8351dd12bae975c0570cc0b}{Notify\+Lights} (\hyperlink{structPose}{Pose} pose)\hypertarget{classRobot_a7fddfc5af8351dd12bae975c0570cc0b}{}\label{classRobot_a7fddfc5af8351dd12bae975c0570cc0b}
+
+\begin{DoxyCompactList}\small\item\em Updates all of the robot\textquotesingle{}s light sensor readings. \end{DoxyCompactList}\item 
+void \hyperlink{classRobot_a76ca6cd4a97bc6dd5f7c07afb3068f38}{Notify\+Food} (\hyperlink{structPose}{Pose} pose)\hypertarget{classRobot_a76ca6cd4a97bc6dd5f7c07afb3068f38}{}\label{classRobot_a76ca6cd4a97bc6dd5f7c07afb3068f38}
+
+\begin{DoxyCompactList}\small\item\em Updates all of the robot\textquotesingle{}s food sensor readings. \end{DoxyCompactList}\item 
+void \hyperlink{classRobot_a47dc50d25073c3e20c9e1dcc8b907c91}{Zero\+Sensors} ()\hypertarget{classRobot_a47dc50d25073c3e20c9e1dcc8b907c91}{}\label{classRobot_a47dc50d25073c3e20c9e1dcc8b907c91}
+
+\begin{DoxyCompactList}\small\item\em Zeroes out all of the sensor\textquotesingle{}s readings. \end{DoxyCompactList}\item 
+bool \hyperlink{classRobot_a1ba35a22382e6ea7884877208614f2fe}{Check\+Starvation} ()
+\begin{DoxyCompactList}\small\item\em Checks whether the starvation timer has reached 0. \end{DoxyCompactList}\item 
+void \hyperlink{classRobot_a30eab32ba9554890537df5605ed290ff}{Handle\+Collision} ()\hypertarget{classRobot_a30eab32ba9554890537df5605ed290ff}{}\label{classRobot_a30eab32ba9554890537df5605ed290ff}
+
+\begin{DoxyCompactList}\small\item\em Sets the robot in avoidance mode. \end{DoxyCompactList}\item 
+bool \hyperlink{classRobot_a2eff92357f02b67c003f114bc3daf8d6}{Get\+Hunger} ()\hypertarget{classRobot_a2eff92357f02b67c003f114bc3daf8d6}{}\label{classRobot_a2eff92357f02b67c003f114bc3daf8d6}
+
+\begin{DoxyCompactList}\small\item\em Returns status of hunger in robots. \end{DoxyCompactList}\item 
+void {\bfseries Set\+Hunger} (bool hunger)\hypertarget{classRobot_aec65ca60fc788892cbf4e843e96ffa9a}{}\label{classRobot_aec65ca60fc788892cbf4e843e96ffa9a}
+
+\item 
+void \hyperlink{classRobot_aa90f9fd3d9194c2456e33c98c7d6f538}{Reset\+Hunger} ()\hypertarget{classRobot_aa90f9fd3d9194c2456e33c98c7d6f538}{}\label{classRobot_aa90f9fd3d9194c2456e33c98c7d6f538}
+
+\begin{DoxyCompactList}\small\item\em Resets the hunger level and hunger timer for the robot. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classRobot_a3f77c13705b8f60480d21d8d936dc39e}{get\+\_\+name} () const override\hypertarget{classRobot_a3f77c13705b8f60480d21d8d936dc39e}{}\label{classRobot_a3f77c13705b8f60480d21d8d936dc39e}
+
+\begin{DoxyCompactList}\small\item\em Get the name of the \hyperlink{classRobot}{Robot} for visualization and for debugging. \end{DoxyCompactList}\item 
+Robot\+Type {\bfseries get\+\_\+robot\+\_\+type} ()\hypertarget{classRobot_a1463b5699ff9a30a76768f7570b43b0d}{}\label{classRobot_a1463b5699ff9a30a76768f7570b43b0d}
+
+\item 
+void {\bfseries set\+\_\+robot\+\_\+type} (Robot\+Type rtype)\hypertarget{classRobot_ab61b7ecbd5276cefb50844f619aeba7e}{}\label{classRobot_ab61b7ecbd5276cefb50844f619aeba7e}
+
+\item 
+double {\bfseries get\+\_\+light\+\_\+sensitivity} ()\hypertarget{classRobot_a2aa27656e640dc3daa72d9d0ead767e0}{}\label{classRobot_a2aa27656e640dc3daa72d9d0ead767e0}
+
+\item 
+void {\bfseries set\+\_\+light\+\_\+sensitivity} (double ls)\hypertarget{classRobot_a965ac6da12ae588bc4d4c2e6887cc088}{}\label{classRobot_a965ac6da12ae588bc4d4c2e6887cc088}
+
+\item 
+\hyperlink{classMotionHandlerRobot}{Motion\+Handler\+Robot} {\bfseries get\+\_\+motion\+\_\+handler} ()\hypertarget{classRobot_a77d37cf0058d18b7f633202e8c1bf814}{}\label{classRobot_a77d37cf0058d18b7f633202e8c1bf814}
+
+\item 
+\hyperlink{classMotionBehaviorDifferential}{Motion\+Behavior\+Differential} {\bfseries get\+\_\+motion\+\_\+behavior} ()\hypertarget{classRobot_ab45bf3c6fdafcd14cdbdb2a8e3f558b8}{}\label{classRobot_ab45bf3c6fdafcd14cdbdb2a8e3f558b8}
+
+\item 
+\hyperlink{structPose}{Pose} {\bfseries get\+\_\+left\+\_\+sensor\+\_\+pose} () const \hypertarget{classRobot_aca5e55fa1fdcc52a53bbe54e62726141}{}\label{classRobot_aca5e55fa1fdcc52a53bbe54e62726141}
+
+\item 
+\hyperlink{structPose}{Pose} {\bfseries get\+\_\+right\+\_\+sensor\+\_\+pose} () const \hypertarget{classRobot_ab58df4e00d69d9e122e0a3cd5cc34090}{}\label{classRobot_ab58df4e00d69d9e122e0a3cd5cc34090}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class representing a robot within the arena. 
+
+Robots are composed of a motion handler, motion behavior, and touch sensor. These classes interact to maintain the pose (position and heading) of the robot. At each time step, the wheel velocities are used to calculate the next pose of the robot. The handler manages the pose and sensor data. The behavior calculates the new pose based on wheel velocities.
+
+Robots are controlled by senor input, which modify wheel velocities.
+
+The touch sensor is activated when the robot collides with an object. The heading is modified after a collision to move the robot away from the other object. 
+
+\subsection{Member Function Documentation}
+\index{Robot@{Robot}!Check\+Starvation@{Check\+Starvation}}
+\index{Check\+Starvation@{Check\+Starvation}!Robot@{Robot}}
+\subsubsection[{\texorpdfstring{Check\+Starvation()}{CheckStarvation()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Robot\+::\+Check\+Starvation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classRobot_a1ba35a22382e6ea7884877208614f2fe}{}\label{classRobot_a1ba35a22382e6ea7884877208614f2fe}
+
+
+Checks whether the starvation timer has reached 0. 
+
+\begin{DoxyReturn}{Returns}
+Returns a boolean (true if starved, false otherwise). 
+\end{DoxyReturn}
+\index{Robot@{Robot}!Sensor\+Location@{Sensor\+Location}}
+\index{Sensor\+Location@{Sensor\+Location}!Robot@{Robot}}
+\subsubsection[{\texorpdfstring{Sensor\+Location(double angle\+\_\+)}{SensorLocation(double angle_)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pose} Robot\+::\+Sensor\+Location (
+\begin{DoxyParamCaption}
+\item[{double}]{angle\+\_\+}
+\end{DoxyParamCaption}
+)}\hypertarget{classRobot_a08072df75742df411a6918545724dfaf}{}\label{classRobot_a08072df75742df411a6918545724dfaf}
+
+
+Calculates the proper position of a sensor relative to a robot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle\+\_\+} & The angle that a sensor will be placed at on a robot. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the correct pose for the position of each sensor. 
+\end{DoxyReturn}
+\index{Robot@{Robot}!Timestep\+Update@{Timestep\+Update}}
+\index{Timestep\+Update@{Timestep\+Update}!Robot@{Robot}}
+\subsubsection[{\texorpdfstring{Timestep\+Update(unsigned int dt) override}{TimestepUpdate(unsigned int dt) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\+::\+Timestep\+Update (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{dt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classRobot_ae790462f8782efcfd26082eedec30ed5}{}\label{classRobot_ae790462f8782efcfd26082eedec30ed5}
+
+
+Update the \hyperlink{classRobot}{Robot}\textquotesingle{}s position and velocity after the specified duration has passed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & The \# of timesteps that have elapsed since the last update. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{robot_8h}{robot.\+h}\item 
+src/\hyperlink{robot_8cc}{robot.\+cc}\end{DoxyCompactItemize}

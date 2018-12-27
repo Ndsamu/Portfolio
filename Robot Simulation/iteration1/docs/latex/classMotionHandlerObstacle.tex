@@ -1,0 +1,82 @@
+\hypertarget{classMotionHandlerObstacle}{}\section{Motion\+Handler\+Obstacle Class Reference}
+\label{classMotionHandlerObstacle}\index{Motion\+Handler\+Obstacle@{Motion\+Handler\+Obstacle}}
+
+
+Class managing a \hyperlink{classObstacle}{Obstacle}\textquotesingle{}s speed and heading angle based on collisions and user inputs.  
+
+
+
+
+{\ttfamily \#include $<$motion\+\_\+handler\+\_\+obstacle.\+h$>$}
+
+
+
+Inheritance diagram for Motion\+Handler\+Obstacle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classMotionHandlerObstacle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Motion\+Handler\+Obstacle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{classMotionHandlerObstacle__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Motion\+Handler\+Obstacle} (\hyperlink{classArenaMobileEntity}{Arena\+Mobile\+Entity} $\ast$ent)\hypertarget{classMotionHandlerObstacle_a372bbd2b587c47fd3535d7044a8e8938}{}\label{classMotionHandlerObstacle_a372bbd2b587c47fd3535d7044a8e8938}
+
+\item 
+{\bfseries Motion\+Handler\+Obstacle} (const \hyperlink{classMotionHandlerObstacle}{Motion\+Handler\+Obstacle} \&other)=default\hypertarget{classMotionHandlerObstacle_a4454a8e05721c4b0aabc263961ae5f8a}{}\label{classMotionHandlerObstacle_a4454a8e05721c4b0aabc263961ae5f8a}
+
+\item 
+\hyperlink{classMotionHandlerObstacle}{Motion\+Handler\+Obstacle} \& {\bfseries operator=} (const \hyperlink{classMotionHandlerObstacle}{Motion\+Handler\+Obstacle} \&other)=default\hypertarget{classMotionHandlerObstacle_a6678c9e294e30b6f932fa49919fe27ff}{}\label{classMotionHandlerObstacle_a6678c9e294e30b6f932fa49919fe27ff}
+
+\item 
+void \hyperlink{classMotionHandlerObstacle_ad41e6be12c163937f5ccab36c4e35be8}{Update\+Velocity} () override
+\begin{DoxyCompactList}\small\item\em Update the speed and the pose angle according to the sensor readings. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class managing a \hyperlink{classObstacle}{Obstacle}\textquotesingle{}s speed and heading angle based on collisions and user inputs. 
+
+Currently, both wheels are always going at maximum speed, and cannot be controlled independently. 
+
+\subsection{Member Function Documentation}
+\index{Motion\+Handler\+Obstacle@{Motion\+Handler\+Obstacle}!Update\+Velocity@{Update\+Velocity}}
+\index{Update\+Velocity@{Update\+Velocity}!Motion\+Handler\+Obstacle@{Motion\+Handler\+Obstacle}}
+\subsubsection[{\texorpdfstring{Update\+Velocity() override}{UpdateVelocity() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Motion\+Handler\+Obstacle\+::\+Update\+Velocity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classMotionHandlerObstacle_ad41e6be12c163937f5ccab36c4e35be8}{}\label{classMotionHandlerObstacle_ad41e6be12c163937f5ccab36c4e35be8}
+
+
+Update the speed and the pose angle according to the sensor readings. 
+
+Currently does not change speed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pose} & The current pose. \\
+\hline
+\mbox{\tt in}  & {\em st} & A \hyperlink{classSensorTouch}{Sensor\+Touch} to be read. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classMotionHandler_ad9bfac3d0ec3cec1d607f41475886c3c}{Motion\+Handler}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/samue289/\+C\+S\+C\+I3081\+W/3081\+\_\+\+S18/project-\/samue289/iteration1/src/\hyperlink{motion__handler__obstacle_8h}{motion\+\_\+handler\+\_\+obstacle.\+h}\item 
+/home/samue289/\+C\+S\+C\+I3081\+W/3081\+\_\+\+S18/project-\/samue289/iteration1/src/\hyperlink{motion__handler__obstacle_8cc}{motion\+\_\+handler\+\_\+obstacle.\+cc}\end{DoxyCompactItemize}

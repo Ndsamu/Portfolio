@@ -1,0 +1,79 @@
+\hypertarget{classLightSensor}{}\section{Light\+Sensor Class Reference}
+\label{classLightSensor}\index{Light\+Sensor@{Light\+Sensor}}
+
+
+\hyperlink{classLight}{Light} sensor used by robots in order to detect presence of lights.  
+
+
+
+
+{\ttfamily \#include $<$light\+\_\+sensor.\+h$>$}
+
+
+
+Inheritance diagram for Light\+Sensor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{classLightSensor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Light\+Sensor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{classLightSensor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLightSensor_a43daac1a28e255523d53b012a2e0a302}{Light\+Sensor} ()\hypertarget{classLightSensor_a43daac1a28e255523d53b012a2e0a302}{}\label{classLightSensor_a43daac1a28e255523d53b012a2e0a302}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classLightSensor}{Light\+Sensor} constructor. \end{DoxyCompactList}\item 
+\hyperlink{classLightSensor_a84b2c1be14f900ad1f68435b7152dbeb}{Light\+Sensor} (\hyperlink{structPose}{Pose} pose)\hypertarget{classLightSensor_a84b2c1be14f900ad1f68435b7152dbeb}{}\label{classLightSensor_a84b2c1be14f900ad1f68435b7152dbeb}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classLightSensor}{Light\+Sensor} constructor with pose parameter. \end{DoxyCompactList}\item 
+\hyperlink{classLightSensor_ac39c170662695a958f153e634c5a3b87}{Light\+Sensor} (double light\+\_\+sensitivity)\hypertarget{classLightSensor_ac39c170662695a958f153e634c5a3b87}{}\label{classLightSensor_ac39c170662695a958f153e634c5a3b87}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classLightSensor}{Light\+Sensor} constructor with light sensitivity parameter. \end{DoxyCompactList}\item 
+void \hyperlink{classLightSensor_a4090b56f0446111e68265801303b7d49}{Calculate\+Reading} (\hyperlink{structPose}{Pose} location\+\_\+)
+\begin{DoxyCompactList}\small\item\em Checks for the presence of a light. \end{DoxyCompactList}\item 
+double {\bfseries Get\+Light\+Sensitivity} ()\hypertarget{classLightSensor_a2d08474e0368f4826e3d7dcf9ea7fb88}{}\label{classLightSensor_a2d08474e0368f4826e3d7dcf9ea7fb88}
+
+\item 
+void {\bfseries Set\+Light\+Sensitivity} (double ls)\hypertarget{classLightSensor_ad81bf44b67b717493d594da45517c870}{}\label{classLightSensor_ad81bf44b67b717493d594da45517c870}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{classLight}{Light} sensor used by robots in order to detect presence of lights. 
+
+Inherits from \hyperlink{classSensor}{Sensor} where the relevant functionality resides. 
+
+\subsection{Member Function Documentation}
+\index{Light\+Sensor@{Light\+Sensor}!Calculate\+Reading@{Calculate\+Reading}}
+\index{Calculate\+Reading@{Calculate\+Reading}!Light\+Sensor@{Light\+Sensor}}
+\subsubsection[{\texorpdfstring{Calculate\+Reading(\+Pose location\+\_\+)}{CalculateReading(Pose location_)}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Sensor\+::\+Calculate\+Reading (
+\begin{DoxyParamCaption}
+\item[{{\bf Pose}}]{location\+\_\+}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classLightSensor_a4090b56f0446111e68265801303b7d49}{}\label{classLightSensor_a4090b56f0446111e68265801303b7d49}
+
+
+Checks for the presence of a light. 
+
+$\ast$
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em location\+\_\+} & The pose of a light or food object.\\
+\hline
+\end{DoxyParams}
+Calculates distance from the pose passed in before calculating a reading relative to the distance. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{light__sensor_8h}{light\+\_\+sensor.\+h}\end{DoxyCompactItemize}

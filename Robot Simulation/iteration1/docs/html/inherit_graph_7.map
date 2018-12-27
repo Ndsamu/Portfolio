@@ -1,5 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classMotionHandler.html" title="Base class for managing the pose and wheel velocity of the entity. " alt="" coords="5,31,112,57"/>
-<area shape="rect" id="node2" href="$classMotionHandlerObstacle.html" title="Class managing a Obstacle&#39;s speed and heading angle based on collisions and user inputs. " alt="" coords="160,5,319,32"/>
-<area shape="rect" id="node3" href="$classMotionHandlerRobot.html" title="Class managing a Robot&#39;s speed and heading angle based on collisions and user inputs. " alt="" coords="169,56,310,83"/>
-</map>
