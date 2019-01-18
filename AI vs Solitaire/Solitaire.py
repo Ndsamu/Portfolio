@@ -614,7 +614,6 @@ class Solitaire:
         return True
 
     def win(self):
-        """Stupid animation when you win."""
         cards = []
         for s in self.openstacks:
             cards = cards + s.cards
@@ -659,6 +658,7 @@ class Solitaire:
                     break
                 self.deck.add(card)
                 card.showback()
+
     def gameplay(self):
         card = self.deck.deal()
         self.deck.add(card)
@@ -716,4 +716,4 @@ def main():
     root.mainloop()
 
 if __name__ == '__main__':
-    main() 
+    main()
