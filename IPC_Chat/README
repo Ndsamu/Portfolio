@@ -1,0 +1,39 @@
+/*CSci4061 F2018 Assignment 2
+ *section:  
+ *date:  11/09/2018
+ *name:  Nathan Lui, Nathan Samuelson, Tyler Deng
+ *id:  5002875, 4949705, 5269221  */
+
+
+/* 1. This program is a chat program hosted by a server program.
+ *    Users can join and chat/use commands in a server hosted room using shared pipes.
+ * 2. Tyler Deng: Created base server/user connection, pipe creation, and 
+ *	functions. Also worked on signal handlers for extra credit.
+ *    Nathan Lui: Worked on client/server functionality (\exit,\kick, etc), correct
+ *	printing for functions, error handling library/system calls, and the README/extra credit exiting.
+ *    Nathan Samuelson: Worked on client/server functions (\p2p, etc),
+ *	user list functionality/fixed user input, and proper server prompts/
+ * 3. To compile the program, navigate to the folder with server.c and client.c.
+ *    Run "make all -j" to compile!
+ * 4. To use the program from shell (once you've compiled);
+ * 	- Navigate to the folder with the compiled files
+ * 	- Run the command "./server.c" to begin the chat server
+ * 	- In another terminal, navigate to the same directory
+ * 	- Run the command "./client.c <username>" to join the chatroom with your
+ * 	  username
+ * 	- Repeat the last two instructions to add more to the chat!
+ * 5. Our program uses shared pipes and polling to simulate a chat room. 
+ *    The server program reads the pipes connected to stdin (terminal) for input, and 
+ *    uses the input to broadcast messages/execute functions. The server also waits for
+ *    input from the client pipes and sends the messages to all the users in the list.
+ *    In the case the client uses functions, the server will read this and execute the functions
+ *    from inside the server.
+ * 6. We've made the assumption that the message will be shorter than 256 characters. (MAX_MSG size)
+ *    We have also assumed the numbers of users will be limited to 10 per server.
+ * 7. For any system calls, we tested the return value and utilized "perror" to 
+ *    error out with a message to the terminal. We also tested the return values for
+ *    library calls that were already implemented in server.c for us. 
+ *    (e.g extract_text, extract_name, etc.). Also when a client gets kicked/exits, 
+ *    the server will cleanup the user by closing pipes, resetting the server slots, etc.
+ *    When the server exits, it will wait for all child processes to exit first, as well as
+ *    kicking/cleaning up all users too. */
